@@ -5,4 +5,4 @@ function onRequest(request, response){
     response.write("hello world :D")
     response.end()
 }
-http.createServer(onRequest).listen(8000)
+http.createServer(onRequest).listen(process.env.PORT || 5000)
